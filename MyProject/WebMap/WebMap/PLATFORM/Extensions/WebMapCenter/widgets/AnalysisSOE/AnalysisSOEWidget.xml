@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Solution name='解决方案名称'>
+
+<!--参数关键字解释-->
+<!--TypeInfo 分析类型定义 TypeCode 分析类型代码 TypeName 分析类型名称 TypeDesp 分析类型描述-->
+
+<!--SAtypeDefInstance 分析实例定义 DataInstance 实例名称 DataInstanceDesp 实例描述-->
+<!-- soe 分析soe服务地址-->
+<!-- DataTableParams 数据表参数集合-->
+<!--  param 参数项   DataStandard 数据标准名称    ModelTableName 模板表名称    actureDataSource 实际数据源    actureTableName 实际表名-->
+  <TypeInfo TypeCode="587018dc-b80c-4989-a1ed-8233396b7bff"  Name="土地利用现状分析" TypeDesp="土地利用现状分类面积分析-2012年度" >
+  
+	  <SAtypeDefInstance Name="肥西县2012年度"  Selected="0" DataInstanceDesp="土地利用现状分析-肥西县2012年度 信息描述">
+	   <Soe Url="http://192.168.1.18/ArcGIS/rest/services/SAtest/MapServer/exts/CwbLandSASOE" />
+	   <DataTableParams>
+		  <param DataStandard="LAND2D" ModelTableName="DLTB" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="DLTB1" />
+		  <param DataStandard="LAND2D" ModelTableName="XZDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="XZDW1" />
+		  <param DataStandard="LAND2D" ModelTableName="LXDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="LXDW1" />
+	   </DataTableParams>
+	  </SAtypeDefInstance>
+	  
+	  <SAtypeDefInstance Name="肥东县2012年度"  Selected="0"  DataInstanceDesp="土地利用现状分析-肥东县2012年度 信息描述">
+	   <Soe Url="http://192.168.1.18/ArcGIS/rest/services/SAtest/MapServer/exts/CwbLandSASOE" />
+	   <DataTableParams>
+		  <param DataStandard="LAND2D" ModelTableName="DLTB" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="DLTB2" />
+		  <param DataStandard="LAND2D" ModelTableName="XZDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="XZDW2" />
+		  <param DataStandard="LAND2D" ModelTableName="LXDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="LXDW2" />
+	   </DataTableParams>
+	  </SAtypeDefInstance>
+	  
+	  <SAtypeDefInstance Name="巢湖市2012年度"  Selected="0" DataInstanceDesp="土地利用现状分析-巢湖市2012年度 信息描述">
+	   <Soe Url="http://192.168.1.18/ArcGIS/rest/services/SAtest/MapServer/exts/CwbLandSASOE" />
+	   <DataTableParams>
+      <param DataStandard="LAND2D" ModelTableName="DLTB" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="DLTB3" />
+      <param DataStandard="LAND2D" ModelTableName="XZDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="XZDW3" />
+      <param DataStandard="LAND2D" ModelTableName="LXDW" actureDataSource="192.168.1.253,5151, ,sde,sde,SDE.DEFAULT" actureTableName="LXDW3" />
+	   </DataTableParams>
+	  </SAtypeDefInstance>
+	  
+  </TypeInfo> 
+  <TypeInfo TypeCode="587018dc-b80c-4989-a1ed-8233396b7baa" Name="农转征地块重叠分析" TypeDesp="农转征地块重叠分析" >
+  
+	  <SAtypeDefInstance Name="合肥市农转征地块重叠分析"  Selected="1" DataInstanceDesp="合肥市农转征地块重叠分析 信息描述">
+	   <Soe Url="http://192.168.1.18/ArcGIS/rest/services/SAtest/MapServer/exts/CwbLandSASOE" />
+	   <DataTableParams>
+      <param DataStandard="JSYDSP" ModelTableName="NZYDK" actureDataSource="192.168.1.242,5151 ,sde,sde,SDE.DEFAULT" actureTableName="SANZYDK" />
+	   </DataTableParams>
+	  </SAtypeDefInstance>
+	  
+   </TypeInfo>
+  
+</Solution>

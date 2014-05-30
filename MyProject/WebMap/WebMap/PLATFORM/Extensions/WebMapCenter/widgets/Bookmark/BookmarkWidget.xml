@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<configuration label="Bookmarks (example)">
+    <bookmarks>
+        <bookmark name="庐阳区">39506800 3525816 39527418 3539705</bookmark>
+        <bookmark name="瑶海区">39526353 3521499 39540155 3540650</bookmark>
+        <bookmark name="蜀山区">39510887 3509412 39523654 3528734</bookmark>
+        <bookmark name="包河区">39518217 3504659 39538447 3527822</bookmark>
+        <bookmark name="巢湖市">39523271 3488462 39565541 3513825</bookmark>
+        <bookmark name="肥东县">39529739 3504522 39549752 3537648</bookmark>
+        <bookmark name="肥西县">39482637 3502266 39525770 3535220</bookmark>
+    </bookmarks>
+</configuration>
+
+<!--
+    See Bookmark widget tag reference at
+    http://links.esri.com/bookmarkwidget
+-->

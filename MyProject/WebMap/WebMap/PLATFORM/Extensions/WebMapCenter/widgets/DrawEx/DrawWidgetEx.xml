@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<configuration>
+    <layername>Draw Features</layername>
+    <geometryservice>http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer</geometryservice>
+    <spatialref>102003</spatialref>
+    <distanceunits>
+        <distanceunit abbr="m" conversion="1">Meters</distanceunit>
+        <distanceunit abbr="km" conversion=".001">Kilometers</distanceunit>
+        <distanceunit abbr="ft" conversion="3.2808">Feet</distanceunit>
+        <distanceunit abbr="mi" conversion="0.000621">Miles</distanceunit>
+    </distanceunits>
+    <areaunits>
+        <areaunit abbr="sq m" conversion="1">Square Meters</areaunit>
+        <areaunit abbr="sq km" conversion="0.000001">Square Kilometers</areaunit>
+        <areaunit abbr="sq ft" conversion="10.763910417">Square Feet</areaunit>
+        <areaunit abbr="sq mi" conversion="0.0000003861021">Square Miles</areaunit>
+        <areaunit abbr="ac" conversion="0.00024710538147">Acres</areaunit>
+        <areaunit abbr="ha" conversion="0.0001">Hectares</areaunit>
+    </areaunits>
+    <pointunits>
+	    <pointunit abbr="spal" wkid="102629">NAD83 AL East(SP Feet)</pointunit>
+		<pointunit abbr="wgs84dd" wkid="4326">Decimal Degrees (WGS84)</pointunit>
+		<pointunit abbr="wgs84dms" wkid="4326">DMS (WGS84)</pointunit>
+		<pointunit abbr="utm19n" wkid="2960">NAD 1983 UTM 19N</pointunit>
+		<pointunit abbr="spwas" wkid="32149">State Plane, WA south NAD 1983</pointunit>
+	</pointunits>
+	<numericlabelprecision>4</numericlabelprecision>
+	<defaulttool>mappoint</defaulttool>
+	<labels>
+		<textrotationlabel>Rotation</textrotationlabel>
+		<markerrotationlabel>Angle</markerrotationlabel>
+		<pointunitslabel>Point Units</pointunitslabel>
+		<savelabel>Save Graphics Layer</savelabel>
+		<openlabel>Open Saved Graphics Layer</openlabel>
+	</labels>
+</configuration>

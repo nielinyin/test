@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00108E0A-6847-4C35-AC63-EA44EBFC6EA9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebMap</RootNamespace>
+    <AssemblyName>WebMap</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>Dll\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\ar\config.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\ar\HeaderControllerWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\zh_CN\BookmarkWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\zh_CN\config.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\zh_CN\CoordinateWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\apps\zh_CN\HeaderControllerWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\about.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\add1.gif" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\adv_print.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\arrow_down.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\arrow_here.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\arrow_up.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\br.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\bullet_go.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\cn.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Context_menu11.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\cross_cursor.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\de.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\del1.gif" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\EditPaste32.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_addtoselection.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_attachments.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_attributes.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_autocompletepolygontool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_cancel.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_extenttool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_freehandpolygontool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_freehandpolylinetool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_genericdocument.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_linetool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_markertool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_newselection.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_polygontool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_polylinetool.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_removefromselection.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\edit_submit.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\EffectsTransparency16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\es.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\fr.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\fs.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\fs_exit.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\GenericSearch32.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\GenericSpatialFile16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\GeoprocessingTool16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\GeoprocessingTool32.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\GeoprocessingTool48.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\globe.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\gps.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\group-layer.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_bookmark.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_car.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_draw.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_fullscreen.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_fullscreen_exit.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_mapview.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_menugroup.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\hfgt_ren.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\it.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_about.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_biomass.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_bookmark.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_bookmark2.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_bookmark3.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_bookmark_add.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_camera.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_clear.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_clear_search.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_clock.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_demographics.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw2.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_circle.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_ellipse.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_freeline.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_freepoly.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_line.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_point.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_poly.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_rect.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_draw_text.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_edit.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_expand.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_expand2.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_flag.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_float.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_folder.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_font_bold.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_font_italic.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_font_underline.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_globe.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_help.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_highway.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_home.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_horizon.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_hydro.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_info.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_layers.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_lego.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_mailbox.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_measure.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_nav.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_options.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_overview.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pan.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_piechart.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pin.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pin2.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pin3.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pin3_centered.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_police.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_policestation.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_print.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pushpin.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_pushpin_centered.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_resources.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_roof_point.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_rss.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_satellite.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_scissors.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_search.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_searchgraphical.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_searchtext.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_servicearea.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_shuttle.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_solar.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_sun.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_table.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_target.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_thematic.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_vertical.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_webcam.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_widget.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_wind.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_zoomfull.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_zoomin.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_zoomnext.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_zoomout.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\i_zoomprevious.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\jp.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\layer.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\LayerDown16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\LayerRemove16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\LayerUp16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\LayerZoomTo16.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Legend32.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Legend_popdensity.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Legend_SheepFire4.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Legend_unemp.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\loader.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\locked.bmp" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\locked.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\logo.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\map-service.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\Red_glow.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\renw.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\ru.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\searchicon.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\thumb.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\tip.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\track.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\unlocked.bmp" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\unlocked.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\us.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_addend.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_addstart.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_close.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_close_red.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_close_red2.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_collapse.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_collapse_down.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_delete.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_down.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_drag.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_expand.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_left.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_link.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_link_rtl.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_max.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_min.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_min_red.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_resize.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_resizecursor.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_resizecursor_rtl.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_resize_rtl.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_right.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\w_up.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\assets\images\yellowdot.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\config-all.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\config.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\defaults.css" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\index.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\indexFullScreen.html" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\indexMap发布用.html" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\license.txt" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\playerProductInstall.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_311.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Demographics_BlockGroups.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Demographics_Counties.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Demographics_States.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Demographics_Tracts.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Fires.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_Hurricanes.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_IncidentAreas.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\popups\PopUp_IncidentPoints.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\swfobject.js" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\TDGYMapIndex.htm" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\version.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\AnalysisSOE\AnalysisSOEWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\AnalysisSOE\AnalysisSOEWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Bookmark\BookmarkWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Bookmark\BookmarkWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Coordinate\CoordinateWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Coordinate\CoordinateWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DataExtract\DataExtractWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DKManager\DKManagerWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DKManager\DKManagerWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DKManager_KC\DKManagerWidget_KC.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DKManager_KC\DKManagerWidget_KC.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DrawEx\assets\images\i_draw.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DrawEx\assets\images\i_save.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\DrawEx\DrawWidgetEx.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Draw\DrawWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Draw\DrawWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Edit\EditWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\FullScreen\FullScreenWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\FullScreen\FullScreenWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\GeoRSS\GeoRSSWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\HeaderController\HeaderControllerWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\HeaderController\HeaderControllerWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\HFGT_Draw\HFGT_DrawWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\HFGT_Draw\HFGT_DrawWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Identify\assets\images\i_info.png" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Identify\IdentifyWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Identify\IdentifyWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\InfoPopupWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWTTrees.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWT_311.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWT_Fires.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWT_Hurricanes.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWT_IncidentAreas.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\IWT_IncidentPoints.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\InfoTemplates\SimpleInfoWinWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\LayerControl\LayerControlWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\LayerControl\LayerControlWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\LayerList\LayerListWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\LayerList\LayerListWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Legend\LegendWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_Bing.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_Canada.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_EU.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_NA.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_RanchoCucamonga.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_US.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_World.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Locate\LocateWidget_WorldGaz.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\MapSwitcher\MapSwitcherWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\MapSwitcher\MapSwitcherWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Navigation\NavigationWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Navigation\NavigationWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\OverviewMap\OverviewMapWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\OverviewMap\OverviewMapWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\PrintSOE\PrintSOEWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\PrintSOE\PrintSOEWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Print\PrintWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\QueryBuilderWidget\QueryBuilderWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\QueryBuilderWidget\QueryBuilderWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Query\QueryWidget_Earthquakes.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Query\QueryWidget_Louisville_PoliceStations.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Query\QueryWidget_Louisville_TrafficCams.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Search\SearchWidget_Louisville.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\SelectGraphics\SelectGraphicsWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\SelectGraphics\SelectGraphicsWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Splash\SplashWidget.swf" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Splash\SplashWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\StaticImage\StaticImageWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Time\TimeWidget.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\Time\TimeWidget_QuakesSince1970.xml" />
+    <Content Include="PLATFORM\Extensions\WebMapCenter\widgets\WidgetContainer\WidgetContainerWidget.swf" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dll\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\de_DE\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\es_ES\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\fr_FR\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\it_IT\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\ja_JP\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\pt_BR\" />
+    <Folder Include="PLATFORM\Extensions\WebMapCenter\apps\ru_RU\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6633</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

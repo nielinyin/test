@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<configuration>
+    
+    <!-- 打印服务SOE -->
+	<PrintUrl url="http://192.168.1.18/ArcGIS/rest/services/printsoeTest/MapServer/exts/GisqPrintSOE/" />
+		
+    <!-- 比例尺 -->
+	<Scales>
+		<Scale label="500" value="500" />
+		<Scale label="1000" value="1000" />
+		<Scale label="2500" value="2500" />
+		<Scale label="5000" value="5000" />
+		<Scale label="10000" value="10000" />
+		<Scale label="20000" value="20000" />
+		<Scale label="25000" value="25000" />
+		<Scale label="50000" value="50000" />
+		<Scale label="100000" value="100000" />
+		<Scale label="250000" value="250000" />
+		<Scale label="300000" value="300000" />
+	</Scales>
+	
+	<!-- 纸张尺寸 --> 
+	<Formats defaultFormat="0">
+		<Format label="A4" height="29.7" width="21" unit="cm" />
+		<Format label="A3" height="42" width="29.7" unit="cm" />
+		<Format label="A2" height="59.4" width="42" unit="cm" />
+		<Format label="A1" height="84.1" width="59.4" unit="cm" />
+		<Format label="A0" height="118.88" width="84.1" unit="cm" />
+		<Format label="Letter" height="11" width="8.5" unit="in" />
+		<Format label="Legal" height="14" width="8.5" unit="in" />
+		<Format label="Tabloid" height="17" width="11" unit="in" />
+		<Format label="ANSI C" height="22" width="17" unit="in" />
+		<Format label="ANSI D" height="34" width="22" unit="in" />
+		<Format label="ANSI E" height="44" width="34" unit="in" />
+	</Formats>
+	
+	
+	<!-- 输出文件格式 -->
+	<FileTypes defaultType="0">
+	    <Type type="pdf" label="PDF" />
+		<Type type="jpg" label="JPG" />
+		<Type type="png" label="PNG" />
+		<Type type="tifw" label="Tiff" />
+	</FileTypes>
+	
+	<!-- 分辨率 -->
+	<Resolutions defaultResolution="0">
+		<Resolution label="低(100 dpi)" dpi="100" />
+		<Resolution label="普通(200 dpi)" dpi="200" />
+		<Resolution label="高(300 dpi)" dpi="300" />
+	</Resolutions>
+	    	
+    <!-- mxd打印模板(局部图) -->
+    <mxdTemplates_Local>
+       <mxdTemplateGroup label = "土地利用现状彩图" >
+            <mxdTemplate fileName ="二调现状局部图A4Vcc.mxd"  label ="二调现状局部图A4纵向" 
+                    defaultScale ="10000"  defaultFormat ="A4" defaultResolution ="200" 
+                    defaultOrientation ="纵向"  defaultFileType ="pdf"  mapBorder="1,1,1,1" >
+                 <!-- 客户端可以修改注记的内容 -->
+                 <TextElements>
+                     <TextElement name ="mapName"  text="包河区土地利用现状局部图" />
+                     <TextElement name ="XMMC"  text=""  />
+                     <TextElement name ="mapAuthor"  text="合肥市国土资源局"  />
+                     <TextElement name ="mapDate"  text="二0一二年九月二十八日"  />
+                 </TextElements>
+            </mxdTemplate>
+       
+            <mxdTemplate fileName ="printtest2.mxd"  label ="测试文档-2" 
+                    defaultScale ="5000"  defaultFormat ="A4" defaultResolution ="300" 
+                    defaultOrientation ="纵向"  defaultFileType ="pdf"  mapBorder="1,1,1,1" >
+                  <!-- 客户端可以修改注记的内容 -->
+                <TextElements>
+                    <TextElement name ="test1"  text="前端修改的注记-1" />
+                    <TextElement name ="test2"  text="前端修改的注记-2" />
+                </TextElements>
+            </mxdTemplate>
+       </mxdTemplateGroup>
+       
+       <mxdTemplateGroup label = "土地利用现状彩图-2" >
+            <mxdTemplate fileName ="二调现状局部图A4Vcc.mxd"  label ="二调现状局部图A4纵向-2" 
+                    defaultScale ="10000"  defaultFormat ="A4" defaultResolution ="200" 
+                    defaultOrientation ="纵向"  defaultFileType ="pdf"  mapBorder="1,1,1,1" >
+                 <!-- 客户端可以修改注记的内容 -->
+                 <TextElements>
+                     <TextElement name ="mapName"  text="包河区土地利用现状局部图" />
+                     <TextElement name ="XMMC"  text=""  />
+                     <TextElement name ="mapAuthor"  text="合肥市国土资源局"  />
+                     <TextElement name ="mapDate"  text="二0一二年九月二十八日"  />
+                 </TextElements>
+            </mxdTemplate>
+       </mxdTemplateGroup>
+       
+    </mxdTemplates_Local>
+    
+    <!-- mxd打印模板(标准分幅图) -->
+    <mxdTemplates_Standard>
+        <mxdTemplateGroup label = "10000" >
+              <mxdTemplate label ="10000土地利用现状彩图"  filePath ="TF10000" 
+                           defaultFileType ="pdf"  defaultResolution ="300"  scale = "10000" >
+                  <TextElements>
+                       <TextElement name ="test1"  text="我的内容-1" />
+                       <TextElement name ="test2"  text="我的内容-2" />
+                  </TextElements>
+              </mxdTemplate>
+              <mxdTemplate label ="10000土地利用现状彩图-2"  filePath ="testPath2" 
+                           defaultFileType ="pdf"  defaultResolution ="200"  scale ="10000" >
+                   <TextElements>
+                       <TextElement name ="test1"  text="我的内容-1" />
+                       <TextElement name ="test2"  text="我的内容-2" />
+                  </TextElements>
+              </mxdTemplate>
+        </mxdTemplateGroup>
+        
+        <mxdTemplateGroup label = "2000" >
+              <mxdTemplate label ="2000土地利用现状彩图"  filePath ="testPath3" 
+                           defaultFileType ="pdf"  defaultResolution ="300"  scale = "2000" >
+              </mxdTemplate>
+              <mxdTemplate label ="2000土地利用现状彩图-2"  filePath ="testPath4" 
+                           defaultFileType ="pdf"  defaultResolution ="300"  scale ="2000" >
+              </mxdTemplate>
+        </mxdTemplateGroup>
+        
+    </mxdTemplates_Standard>
+</configuration>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<!--
+	Here you can set image url, image tooltip, map maxwidth, and map maxheight
+	separately for both normal and full screen display states
+-->
+
+<configuration>
+        <imageurlnormal>assets\images\hfgt_fullscreen.png</imageurlnormal>
+	<tooltipnormal>全屏</tooltipnormal>
+	<maxwidthnormal></maxwidthnormal>
+	<maxheightnormal></maxheightnormal>
+	
+	<imageurlfullscreen>assets\images\hfgt_fullscreen_exit.png</imageurlfullscreen>
+	<tooltipfullscreen>退出全屏</tooltipfullscreen>
+	<maxwidthfullscreen></maxwidthfullscreen>
+	<maxheightfullscreen></maxheightfullscreen>
+</configuration>

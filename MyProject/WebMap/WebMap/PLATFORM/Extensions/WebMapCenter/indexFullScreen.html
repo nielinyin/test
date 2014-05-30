@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd nowrap HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <base target="_self">
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+</head>
+
+<script language="JavaScript"> 
+    function callApp() {
+	
+       MyFlexApp.flexFunctionAlias(document.getElementById('sendField').value);
+        
+    }
+
+    function  getConfigSrv() {
+            
+       return "http://192.168.1.253/WgsWebApp/XmlWebSer.asmx?wsdl";
+                 
+    }
+            
+    function  getConMethod() {
+            
+       return  "TxtLoadConfigXml";
+            
+    }
+            
+    function  getSystemCode() {
+            
+       return "zfjc_map";
+     
+    }
+            
+    function  getCurUserRoles() {
+       return  "";
+            
+    }
+
+</script>
+
+<body style='overflow-x:hidden;overflow-y:hidden'>
+  <form name="htmlForm">
+     数据发送给AS:
+    <input type="text" id="sendField" />
+    <input type="button" value="发送" onclick="callApp()" /><br />
+    <br />
+    
+  </form>
+<div>
+   <OBJECT id="MyFlexApp" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="100%" HEIGHT="500">
+      <PARAM NAME=movie VALUE="index.swf?config.xml">
+      <PARAM NAME=quality VALUE=high>
+      <PARAM NAME=scale VALUE=noborder>
+      <PARAM NAME=bgcolor VALUE=#000000>
+      <PARAM name="allowFullScreen" value="true"/> 
+   
+   </OBJECT>
+</div>
+</body>
+

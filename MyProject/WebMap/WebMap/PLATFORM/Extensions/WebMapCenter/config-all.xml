@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////
+//
+// Read more about ArcGIS Viewer for Flex - http://links.esri.com/flexviewer
+//
+////////////////////////////////////////////////////////////////////////////////
+-->
+<configuration>
+    <title>ArcGIS Viewer for Flex</title>
+    <subtitle>a configurable web mapping application</subtitle>
+    <logo>assets/images/logo.png</logo>
+    <style>
+        <colors>0xFFFFFF,0x333333,0x101010,0x000000,0xFFD700</colors>
+        <alpha>0.8</alpha>
+    </style>
+    <!-- replace the following url with your own geometryservice -->
+    <geometryservice  url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
+
+    <!-- UI elements -->
+    <widget left="10"  top="50"    config="widgets/Navigation/NavigationWidget.xml" url="widgets/Navigation/NavigationWidget.swf"/>
+    <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/>
+    <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
+    <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf"/>
+
+    <map wraparound180="true" top="40">
+        <basemaps>
+            <layer label="供地项目" type="gisqmap" visible="true"
+                   url="http://192.168.1.253/hf_2d/"/>
+           
+        </basemaps>       
+    </map>
+
+    <!-- widgets organized into widget containers that manage close/open etc -->
+    <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
+    <widgetcontainer layout="float">
+        <widget label="地块管理"         left="100" top="100" layout="fix"
+                icon="assets/images/i_bookmark.png"
+                config="widgets/DKManager/DKManagerWidget.xml"
+                url="widgets/DKManager/DKManagerWidget.swf"/>
+        <widget label="Bookmarks"         left="430" top="90"
+                icon="assets/images/i_bookmark.png"
+                config="widgets/Bookmark/BookmarkWidget.xml"
+                url="widgets/Bookmark/BookmarkWidget.swf"/>
+        
+        <!--
+        <widget label="My first widget"
+                icon="assets/images/i_widget.png"
+                config="widgets/Samples/HelloWorld/HelloWorldWidget.xml"
+                url="widgets/Samples/HelloWorld/HelloWorldWidget.swf"/>
+        -->
+    </widgetcontainer>
+
+</configuration>
